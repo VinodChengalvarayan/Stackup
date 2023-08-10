@@ -27,8 +27,8 @@ namespace Stackup.Api.Controllers
         public IActionResult StartJob()
         {
             _configuration["Status"] = "Processing";
-            DateTime currentTime = DateTime.UtcNow;
-            DelayWithCallback(10000, () =>
+            DateTime currentTime = DateTime.UtcNo
+            DelayWithCallback(10001, () =>
             {
                 _configuration["Status"] = "Completed";
             });
