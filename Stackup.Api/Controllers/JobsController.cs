@@ -34,7 +34,7 @@ namespace Stackup.Api.Controllers
             });
 
 
-            return Ok($"Current Time: {currentTime}");
+            return Ok($"Current Time1: {currentTime}");
         }
 
         public static async Task DelayWithCallback(int millisecondsDelay, Action callback)
